@@ -3,6 +3,8 @@ export interface Project {
   title: string;
   category: string;
   description: string;
+  longDescription: string[];
+  role: string;
   tags: string[];
   year: string;
   featured: boolean;
@@ -77,11 +79,11 @@ export interface SiteData {
 
 export const siteData: SiteData = {
   profile: {
-    name: "Adnan",
+    name: "Musa",
     title: "Product Designer & Developer",
-    tagline: "Crafting digital experiences where clarity meets craft.",
+    tagline: "I design and build things for the web.",
     shortBio:
-      "I work at the intersection of design and engineering \u2014 building products that feel inevitable.",
+      "A designer who codes \u2014 turning ideas into clean, thoughtful digital products that just work.",
   },
   about: {
     intro:
@@ -105,13 +107,7 @@ export const siteData: SiteData = {
     { value: "3", label: "Industries Served" },
   ],
   services: [
-    {
-      title: "Product Design",
-      description:
-        "End-to-end product design from research and wireframes to high-fidelity prototypes and design systems.",
-      icon: "design",
-    },
-    {
+{
       title: "Frontend Engineering",
       description:
         "Pixel-perfect, performant interfaces built with React, Next.js, and modern web technologies.",
@@ -122,12 +118,6 @@ export const siteData: SiteData = {
       description:
         "Complete application architecture \u2014 APIs, databases, authentication, and deployment pipelines.",
       icon: "stack",
-    },
-    {
-      title: "Strategy & Consulting",
-      description:
-        "Product strategy, technical consulting, and roadmap planning for startups and growing teams.",
-      icon: "strategy",
     },
   ],
   approach: {
@@ -207,13 +197,13 @@ export const siteData: SiteData = {
     heading: "Let\u2019s Build Something Together",
     subtext:
       "Have a project in mind or want to collaborate? I\u2019m always open to conversations about design, engineering, and new ideas.",
-    email: "hello@adnan.dev",
+    email: "hello@musa.dev",
   },
   contact: {
     heading: "Get in Touch",
     subtext:
       "Whether you have a project idea, a question, or just want to say hello \u2014 my inbox is always open.",
-    email: "hello@adnan.dev",
+    email: "hello@musa.dev",
     socials: [
       { label: "GitHub", url: "https://github.com" },
       { label: "LinkedIn", url: "https://linkedin.com" },
@@ -222,39 +212,45 @@ export const siteData: SiteData = {
   },
   projects: [
     {
-      id: "srve",
-      title: "SRVE Platform",
-      category: "Product Design & Engineering",
+      id: "t3-the-think-tank",
+      title: "T3 The Think Tank",
+      category: "Web Design & Development",
       description:
-        "A dual-module meat delivery and Qurbani service platform \u2014 built from zero with customer apps, delivery tools, and a full admin system.",
-      tags: ["React Native", "Node.js", "MongoDB", "Full-Stack"],
-      year: "2024",
+        "I designed and built the website for T3 \u2014 a humane technology company. Clean, purposeful, and true to what they stand for.",
+      longDescription: [
+        "T3 The Think Tank is all about humane technology \u2014 building tech that genuinely serves people. They needed a website that reflected that philosophy without overcomplicating things.",
+        "I worked on both the design and development from start to finish. The goal was to keep it clean and intentional \u2014 every element on the page earns its place. No clutter, no gimmicks, just clarity.",
+        "The design leans into whitespace, thoughtful typography, and subtle interactions that feel polished without being distracting. It\u2019s meant to feel calm and trustworthy, which is exactly what a company like T3 needs.",
+        "Built it with Next.js for performance and SEO, styled with Tailwind CSS, and deployed on Vercel. The site loads fast, looks sharp on every device, and communicates T3\u2019s mission the moment you land on it.",
+      ],
+      role: "Designer & Developer",
+      tags: ["Next.js", "Tailwind CSS", "Web Design", "Vercel"],
+      year: "2025",
       featured: true,
-    },
-    {
-      id: "bake-n-shake",
-      title: "Bake N' Shake",
-      category: "E-Commerce & UX",
-      description:
-        "Bakery chain e-commerce platform with an AI-powered custom cake builder \u2014 blending commerce with delight.",
-      tags: ["Next.js", "E-Commerce", "AI"],
-      year: "2024",
-      featured: false,
+      link: "https://t-3.in",
     },
     {
       id: "magnaperitus",
-      title: "Magnaperitus Law Firm",
-      category: "Web Design",
+      title: "Magnaperitus",
+      category: "Web Design & Development",
       description:
-        "Premium website for a Bhopal-based law firm \u2014 sophisticated branding, performant build, zero compromise.",
-      tags: ["Web Design", "Next.js", "Branding"],
-      year: "2024",
-      featured: false,
+        "I designed and developed the website for Magnaperitus \u2014 a law firm that needed a digital presence as sharp and professional as their practice.",
+      longDescription: [
+        "Magnaperitus is a law firm that needed a website to match the credibility and professionalism they bring to their clients. The old online presence wasn\u2019t cutting it, so they came to me for a complete redesign and build.",
+        "The approach was straightforward \u2014 make it look trustworthy, make it easy to navigate, and make it fast. Law firms don\u2019t need flashy animations or trendy layouts. They need clarity and authority.",
+        "I focused on strong typography, a clean structure, and a color palette that feels serious without being cold. Every page is designed to guide potential clients toward getting in touch.",
+        "Built with Next.js and Tailwind CSS for a fast, responsive experience. The site works beautifully on every screen size and loads in under a second.",
+      ],
+      role: "Designer & Developer",
+      tags: ["Next.js", "Tailwind CSS", "Web Design", "Vercel"],
+      year: "2025",
+      featured: true,
+      link: "https://magnaperitus.in",
     },
   ],
   company: {
     name: "Yacum",
-    description: "We build digital products and ventures. Visit our studio.",
+    description: "",
     url: "https://yacum.in",
   },
 };

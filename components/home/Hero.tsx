@@ -130,7 +130,34 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Floating abstract card */}
+      {/* Floating abstract card - left */}
+      <motion.div
+        className="hidden lg:block absolute top-32 left-12 xl:left-24 w-56 h-72 rounded-2xl overflow-hidden"
+        animate={
+          prefersReduced
+            ? {}
+            : {
+                y: [0, -10, 0],
+                rotate: [-2, 1, -2],
+              }
+        }
+        transition={
+          prefersReduced
+            ? undefined
+            : {
+                duration: 7,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }
+        }
+        aria-hidden="true"
+      >
+        <div className="absolute inset-0 bg-card-gradient rounded-2xl border border-white/[0.08]" />
+        <div className="absolute inset-0 grid-texture" />
+        <div className="absolute inset-0 noise-overlay rounded-2xl" />
+      </motion.div>
+
+      {/* Floating abstract card - right */}
       <motion.div
         className="hidden lg:block absolute bottom-24 right-12 xl:right-24 w-64 h-80 rounded-2xl overflow-hidden"
         animate={

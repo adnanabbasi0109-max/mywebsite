@@ -99,10 +99,26 @@ body {
 
 /* ── Gradient text utility ── */
 .gradient-text {
-  background: linear-gradient(135deg, #f0ede8 0%, #e8e0d4 50%, #c0b8a8 100%);
+  background: linear-gradient(
+    90deg,
+    #f0ede8 0%,
+    #d4c8b0 20%,
+    #b8c8d0 40%,
+    #c8b8d4 60%,
+    #d4c0b0 80%,
+    #f0ede8 100%
+  );
+  background-size: 300% 100%;
+  animation: gradient-shift 3s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* ── Grid texture for featured panel ── */

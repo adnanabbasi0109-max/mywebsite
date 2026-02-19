@@ -92,7 +92,7 @@ export default function Nav() {
           href="/"
           className="text-off-white font-medium text-lg tracking-tight"
         >
-          Adnan
+          Musa
         </Link>
 
         {/* Desktop links */}

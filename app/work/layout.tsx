@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "A curated collection of projects spanning product design, full-stack development, and creative technology by Adnan.",
+    "A curated collection of projects spanning product design, full-stack development, and creative technology by Musa.",
   openGraph: {
-    title: "Work — Adnan",
+    title: "Work — Musa",
     description:
       "A curated collection of projects spanning product design, full-stack development, and creative technology.",
   },

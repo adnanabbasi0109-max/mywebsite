@@ -24,13 +24,6 @@ export default function WorkHero() {
               </p>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.2}>
-              <p className="text-base text-off-white/40 leading-relaxed">
-                Each project reflects a commitment to craft &mdash; from initial
-                concept through to pixel-perfect execution. These are the
-                products and platforms I&apos;ve brought to life.
-              </p>
-            </ScrollReveal>
           </div>
 
           {/* Right column - Featured Panel */}

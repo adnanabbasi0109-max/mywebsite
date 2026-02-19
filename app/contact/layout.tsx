@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Adnan for project inquiries, collaborations, or just to say hello.",
+    "Get in touch with Musa for project inquiries, collaborations, or just to say hello.",
   openGraph: {
-    title: "Contact — Adnan",
+    title: "Contact — Musa",
     description:
-      "Get in touch with Adnan for project inquiries, collaborations, or just to say hello.",
+      "Get in touch with Musa for project inquiries, collaborations, or just to say hello.",
   },
 };
 
