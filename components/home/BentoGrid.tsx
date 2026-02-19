@@ -29,10 +29,10 @@ export default function BentoGrid() {
                 &ldquo;
               </div>
               <p className="text-lg md:text-xl text-off-white/70 leading-relaxed font-light italic">
-                I believe great software should feel obvious the moment you touch it.
+                We believe great software should feel obvious the moment you touch it.
               </p>
               <span className="mt-6 block text-xs uppercase tracking-[0.2em] text-off-white/30">
-                Personal philosophy
+                Our philosophy
               </span>
             </TiltCard>
           </motion.div>

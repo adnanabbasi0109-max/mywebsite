@@ -8,7 +8,6 @@ import Philosophy from "@/components/about/Philosophy";
 import Timeline from "@/components/about/Timeline";
 import Tools from "@/components/about/Tools";
 import AboutWorkTeaser from "@/components/about/WorkTeaser";
-import AboutCompanyBlock from "@/components/about/CompanyBlock";
 
 export default function AboutPage() {
   return (
@@ -19,7 +18,6 @@ export default function AboutPage() {
       <Timeline />
       <Tools />
       <AboutWorkTeaser />
-      <AboutCompanyBlock />
     </motion.div>
   );
 }

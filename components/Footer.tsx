@@ -59,38 +59,6 @@ export default function Footer() {
             </ScrollReveal>
           </div>
 
-          {/* Connect column */}
-          <div className="md:col-span-4">
-            <ScrollReveal delay={0.2}>
-              <h3 className="text-xs uppercase tracking-[0.2em] text-off-white/30 mb-5">
-                Studio
-              </h3>
-              <p className="text-sm text-off-white/40 leading-relaxed mb-4">
-                {siteData.company.description}
-              </p>
-              <a
-                href={siteData.company.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm text-off-white/60 hover:text-off-white transition-colors duration-200 group"
-              >
-                {siteData.company.name}
-                <svg
-                  className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 17L17 7M17 7H7M17 7v10"
-                  />
-                </svg>
-              </a>
-            </ScrollReveal>
-          </div>
         </div>
 
         {/* Divider */}

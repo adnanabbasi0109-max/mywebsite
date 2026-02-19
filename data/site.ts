@@ -70,28 +70,23 @@ export interface SiteData {
     socials: { label: string; url: string }[];
   };
   projects: Project[];
-  company: {
-    name: string;
-    description: string;
-    url: string;
-  };
 }
 
 export const siteData: SiteData = {
   profile: {
     name: "Musa",
     title: "Product Designer & Developer",
-    tagline: "I design and build things for the web.",
+    tagline: "We design and build things for the web.",
     shortBio:
-      "A designer who codes \u2014 turning ideas into clean, thoughtful digital products that just work.",
+      "A team of designers who code \u2014 turning ideas into clean, thoughtful digital products that just work.",
   },
   about: {
     intro:
-      "I\u2019m a designer-developer hybrid with a deep interest in systems, interfaces, and the invisible logic that makes products feel effortless.",
+      "We\u2019re a designer-developer hybrid team with a deep interest in systems, interfaces, and the invisible logic that makes products feel effortless.",
     paragraphs: [
-      "My work spans product design, frontend engineering, and strategy \u2014 often all three at once. I believe great software should feel obvious the moment you touch it.",
-      "I\u2019ve built platforms from zero to scale, led cross-functional teams, and consulted on products across fintech, logistics, education, and consumer apps.",
-      "When I\u2019m not designing or building, I\u2019m usually reading about Islamic scholarship, cosmology, or the philosophy of technology.",
+      "Our work spans product design, frontend engineering, and strategy \u2014 often all three at once. We believe great software should feel obvious the moment you touch it.",
+      "We\u2019ve built platforms from zero to scale, led cross-functional teams, and consulted on products across fintech, logistics, education, and consumer apps.",
+      "When we\u2019re not designing or building, we\u2019re usually exploring Islamic scholarship, cosmology, or the philosophy of technology.",
     ],
     highlights: [
       "Full-Stack Development",
@@ -121,7 +116,7 @@ export const siteData: SiteData = {
     },
   ],
   approach: {
-    title: "How I Work",
+    title: "How We Work",
     description:
       "Every project follows a process rooted in clarity, iteration, and craft.",
     principles: [
@@ -168,7 +163,7 @@ export const siteData: SiteData = {
       year: "2024",
       title: "Scaling Products & Ventures",
       description:
-        "Led development on multiple platforms including SRVE and Bake N' Shake. Expanded Yacum\u2019s portfolio across industries.",
+        "Led development on multiple platforms including SRVE and Bake N' Shake. Expanded our portfolio across industries.",
     },
     {
       year: "2023",
@@ -190,19 +185,19 @@ export const siteData: SiteData = {
     },
   ],
   philosophy: {
-    heading: "What I Believe",
-    body: "Great products aren\u2019t just functional \u2014 they carry intent in every detail. I believe technology should serve people with clarity, beauty, and purpose. The best interfaces disappear, leaving only the experience.",
+    heading: "What We Believe",
+    body: "Great products aren\u2019t just functional \u2014 they carry intent in every detail. We believe technology should serve people with clarity, beauty, and purpose. The best interfaces disappear, leaving only the experience.",
   },
   cta: {
     heading: "Let\u2019s Build Something Together",
     subtext:
-      "Have a project in mind or want to collaborate? I\u2019m always open to conversations about design, engineering, and new ideas.",
+      "Have a project in mind or want to collaborate? We\u2019re always open to conversations about design, engineering, and new ideas.",
     email: "contact@musa.in",
   },
   contact: {
     heading: "Get in Touch",
     subtext:
-      "Whether you have a project idea, a question, or just want to say hello \u2014 my inbox is always open.",
+      "Whether you have a project idea, a question, or just want to say hello \u2014 our inbox is always open.",
     email: "contact@musa.in",
     socials: [],
   },
@@ -212,12 +207,12 @@ export const siteData: SiteData = {
       title: "T3 The Think Tank",
       category: "Web Design & Development",
       description:
-        "I designed and built the website for T3 \u2014 a humane technology company. Clean, purposeful, and true to what they stand for.",
+        "We designed and built the website for T3 \u2014 a humane technology company. Clean, purposeful, and true to what they stand for.",
       longDescription: [
         "T3 The Think Tank is all about humane technology \u2014 building tech that genuinely serves people. They needed a website that reflected that philosophy without overcomplicating things.",
-        "I worked on both the design and development from start to finish. The goal was to keep it clean and intentional \u2014 every element on the page earns its place. No clutter, no gimmicks, just clarity.",
+        "We worked on both the design and development from start to finish. The goal was to keep it clean and intentional \u2014 every element on the page earns its place. No clutter, no gimmicks, just clarity.",
         "The design leans into whitespace, thoughtful typography, and subtle interactions that feel polished without being distracting. It\u2019s meant to feel calm and trustworthy, which is exactly what a company like T3 needs.",
-        "Built it with Next.js for performance and SEO, styled with Tailwind CSS, and deployed on Vercel. The site loads fast, looks sharp on every device, and communicates T3\u2019s mission the moment you land on it.",
+        "Built with Next.js for performance and SEO, styled with Tailwind CSS, and deployed on Vercel. The site loads fast, looks sharp on every device, and communicates T3\u2019s mission the moment you land on it.",
       ],
       role: "Designer & Developer",
       tags: ["Next.js", "Tailwind CSS", "Web Design", "Vercel"],
@@ -230,11 +225,11 @@ export const siteData: SiteData = {
       title: "Magnaperitus",
       category: "Web Design & Development",
       description:
-        "I designed and developed the website for Magnaperitus \u2014 a law firm that needed a digital presence as sharp and professional as their practice.",
+        "We designed and developed the website for Magnaperitus \u2014 a law firm that needed a digital presence as sharp and professional as their practice.",
       longDescription: [
-        "Magnaperitus is a law firm that needed a website to match the credibility and professionalism they bring to their clients. The old online presence wasn\u2019t cutting it, so they came to me for a complete redesign and build.",
+        "Magnaperitus is a law firm that needed a website to match the credibility and professionalism they bring to their clients. The old online presence wasn\u2019t cutting it, so they came to us for a complete redesign and build.",
         "The approach was straightforward \u2014 make it look trustworthy, make it easy to navigate, and make it fast. Law firms don\u2019t need flashy animations or trendy layouts. They need clarity and authority.",
-        "I focused on strong typography, a clean structure, and a color palette that feels serious without being cold. Every page is designed to guide potential clients toward getting in touch.",
+        "We focused on strong typography, a clean structure, and a color palette that feels serious without being cold. Every page is designed to guide potential clients toward getting in touch.",
         "Built with Next.js and Tailwind CSS for a fast, responsive experience. The site works beautifully on every screen size and loads in under a second.",
       ],
       role: "Designer & Developer",
@@ -244,9 +239,4 @@ export const siteData: SiteData = {
       link: "https://magnaperitus.in",
     },
   ],
-  company: {
-    name: "Yacum",
-    description: "",
-    url: "https://yacum.in",
-  },
 };

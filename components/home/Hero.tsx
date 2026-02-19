@@ -112,7 +112,7 @@ export default function Hero() {
           className="mt-12"
         >
           <MagneticButton href="/work">
-            View My Work
+            View Our Work
             <svg
               className="w-4 h-4"
               fill="none"

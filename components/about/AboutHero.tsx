@@ -35,7 +35,7 @@ export default function AboutHero() {
             />
 
             <span className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-6 block relative z-10">
-              Read about me
+              Read about us
             </span>
             <h1 className="text-display-lg font-semibold gradient-text mb-6 relative z-10">
               {siteData.profile.name}

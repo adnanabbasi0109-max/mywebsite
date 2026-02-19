@@ -125,7 +125,7 @@ function InteractiveCard() {
         {/* Content */}
         <div className="relative z-10">
           <p className="text-2xl md:text-3xl text-off-white/80 font-light leading-relaxed mb-2">
-            I&apos;d love to help you build
+            We&apos;d love to help you build
           </p>
           <p className="text-2xl md:text-3xl font-semibold gradient-text mb-10 min-h-[2.5rem]">
             {displayText}
@@ -265,7 +265,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h2 className="text-lg font-semibold text-off-white mb-2">
-                  Email Me
+                  Email Us
                 </h2>
                 <p className="text-sm text-off-white/40 mb-6 leading-relaxed">
                   Best for project inquiries, collaborations, and detailed
@@ -312,10 +312,10 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h2 className="text-lg font-semibold text-off-white mb-2">
-                  Find Me Online
+                  Find Us Online
                 </h2>
                 <p className="text-sm text-off-white/40 mb-6 leading-relaxed">
-                  Follow my work, connect, or just see what I&apos;m up to.
+                  Follow our work, connect, or just see what we&apos;re up to.
                 </p>
                 {siteData.contact.socials.length > 0 ? (
                   <ul className="space-y-3">
@@ -365,58 +365,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Company block */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-company-gradient"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 border-y border-white/[0.05]"
-          aria-hidden="true"
-        />
-
-        <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
-          <ScrollReveal>
-            <span className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-4 block">
-              Or reach out through
-            </span>
-            <h2 className="text-display-md font-semibold gradient-text mb-6">
-              {siteData.company.name}
-            </h2>
-          </ScrollReveal>
-          {siteData.company.description && (
-            <ScrollReveal delay={0.1}>
-              <p className="text-lg text-off-white/50 mb-10 leading-relaxed">
-                {siteData.company.description}
-              </p>
-            </ScrollReveal>
-          )}
-          <ScrollReveal delay={0.2}>
-            <a
-              href={siteData.company.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 border border-white/20 rounded-full text-off-white text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:border-white/30"
-            >
-              Visit {siteData.company.name}
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </a>
-          </ScrollReveal>
-        </div>
-      </section>
     </motion.div>
   );
 }
