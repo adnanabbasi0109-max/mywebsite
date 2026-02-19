@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useRef } from "react";
 import {
@@ -88,12 +89,15 @@ export default function Nav() {
       }}
     >
       <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16">
-        <Link
-          href="/"
-          className="text-off-white text-2xl tracking-tight"
-          style={{ fontFamily: "var(--font-league-spartan)" }}
-        >
-          <span className="font-extrabold uppercase">Musa</span><span className="font-extrabold text-off-white/50">.</span>
+        <Link href="/" className="block">
+          <Image
+            src="/logo.png"
+            alt="Musa"
+            width={320}
+            height={128}
+            className="h-28 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop links */}

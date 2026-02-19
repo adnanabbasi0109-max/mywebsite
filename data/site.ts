@@ -192,13 +192,13 @@ export const siteData: SiteData = {
     heading: "Let\u2019s Build Something Together",
     subtext:
       "Have a project in mind or want to collaborate? We\u2019re always open to conversations about design, engineering, and new ideas.",
-    email: "contact@musa.in",
+    email: "contact@yacum.in",
   },
   contact: {
     heading: "Get in Touch",
     subtext:
       "Whether you have a project idea, a question, or just want to say hello \u2014 our inbox is always open.",
-    email: "contact@musa.in",
+    email: "contact@yacum.in",
     socials: [],
   },
   projects: [
