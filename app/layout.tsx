@@ -20,16 +20,16 @@ const leagueSpartan = League_Spartan({
 
 export const metadata: Metadata = {
   title: {
-    default: "Musa — Product Designer & Developer",
-    template: "%s — Musa",
+    default: "Yacum — First in Innovation",
+    template: "%s — Yacum",
   },
   description:
-    "Crafting digital experiences where clarity meets craft. Product design, frontend engineering, and strategy.",
-  metadataBase: new URL("https://musa.dev"),
+    "First in Innovation. Product design, frontend engineering, and strategy.",
+  metadataBase: new URL("https://yacum.in"),
   openGraph: {
-    title: "Musa — Product Designer & Developer",
+    title: "Yacum — First in Innovation",
     description:
-      "Crafting digital experiences where clarity meets craft.",
+      "First in Innovation.",
     type: "website",
   },
 };
