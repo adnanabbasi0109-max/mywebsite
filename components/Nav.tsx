@@ -90,9 +90,10 @@ export default function Nav() {
       <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16">
         <Link
           href="/"
-          className="text-off-white font-medium text-lg tracking-tight"
+          className="text-off-white text-2xl tracking-tight"
+          style={{ fontFamily: "var(--font-league-spartan)" }}
         >
-          Musa
+          <span className="font-extrabold uppercase">Musa</span><span className="font-extrabold text-off-white/50">.</span>
         </Link>
 
         {/* Desktop links */}

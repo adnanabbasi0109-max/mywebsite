@@ -10,6 +10,7 @@ import {
   fadeUp,
 } from "@/lib/motion";
 import ScrollReveal from "@/components/ScrollReveal";
+import TiltCard from "@/components/TiltCard";
 
 export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
@@ -209,41 +210,43 @@ export default function ProjectPage() {
               .slice(0, 2)
               .map((p) => (
                 <motion.div key={p.id} variants={fadeUp}>
-                  <Link
-                    href={`/work/${p.id}`}
-                    className="group block bg-[#111] border border-white/[0.08] rounded-2xl p-7 shadow-[0_0_40px_rgba(0,0,0,0.6)] transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.15]"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs text-off-white/40 uppercase tracking-wider">
-                        {p.category}
-                      </span>
-                      <span className="text-xs text-off-white/30">
-                        {p.year}
-                      </span>
-                    </div>
-                    <h3 className="text-lg font-semibold text-off-white mb-2">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm text-off-white/45 leading-relaxed">
-                      {p.description}
-                    </p>
-                    <div className="mt-5 flex items-center text-sm text-off-white/40 group-hover:text-off-white/70 transition-colors">
-                      <span>View details</span>
-                      <svg
-                        className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </div>
-                  </Link>
+                  <TiltCard className="bg-[#111] border border-white/[0.08] rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+                    <Link
+                      href={`/work/${p.id}`}
+                      className="group block p-7 h-full"
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-xs text-off-white/40 uppercase tracking-wider">
+                          {p.category}
+                        </span>
+                        <span className="text-xs text-off-white/30">
+                          {p.year}
+                        </span>
+                      </div>
+                      <h3 className="text-lg font-semibold text-off-white mb-2">
+                        {p.title}
+                      </h3>
+                      <p className="text-sm text-off-white/45 leading-relaxed">
+                        {p.description}
+                      </p>
+                      <div className="mt-5 flex items-center text-sm text-off-white/40 group-hover:text-off-white/70 transition-colors">
+                        <span>View details</span>
+                        <svg
+                          className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </div>
+                    </Link>
+                  </TiltCard>
                 </motion.div>
               ))}
           </motion.div>

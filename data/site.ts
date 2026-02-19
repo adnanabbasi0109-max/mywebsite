@@ -197,18 +197,14 @@ export const siteData: SiteData = {
     heading: "Let\u2019s Build Something Together",
     subtext:
       "Have a project in mind or want to collaborate? I\u2019m always open to conversations about design, engineering, and new ideas.",
-    email: "hello@musa.dev",
+    email: "contact@musa.in",
   },
   contact: {
     heading: "Get in Touch",
     subtext:
       "Whether you have a project idea, a question, or just want to say hello \u2014 my inbox is always open.",
-    email: "hello@musa.dev",
-    socials: [
-      { label: "GitHub", url: "https://github.com" },
-      { label: "LinkedIn", url: "https://linkedin.com" },
-      { label: "Twitter / X", url: "https://x.com" },
-    ],
+    email: "contact@musa.in",
+    socials: [],
   },
   projects: [
     {

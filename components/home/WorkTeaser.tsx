@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { siteData } from "@/data/site";
 import { staggerContainer, fadeUp } from "@/lib/motion";
 import ScrollReveal from "@/components/ScrollReveal";
+import TiltCard from "@/components/TiltCard";
 
 export default function WorkTeaser() {
   const teaserProjects = siteData.projects.slice(0, 2);
@@ -27,41 +28,43 @@ export default function WorkTeaser() {
         >
           {teaserProjects.map((project) => (
             <motion.div key={project.id} variants={fadeUp}>
-              <Link
-                href={`/work/${project.id}`}
-                className="group block relative bg-[#111] border border-white/[0.08] rounded-2xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.6)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_60px_rgba(0,0,0,0.8)] hover:border-white/[0.15]"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs text-off-white/40 uppercase tracking-wider">
-                    {project.category}
-                  </span>
-                  <span className="text-xs text-off-white/30">
-                    {project.year}
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold text-off-white mb-3">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-off-white/50 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="mt-6 flex items-center text-sm text-off-white/40 group-hover:text-off-white/70 transition-colors">
-                  <span>View details</span>
-                  <svg
-                    className="w-4 h-4 ml-1 transform translate-x-0 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </div>
-              </Link>
+              <TiltCard className="bg-[#111] border border-white/[0.08] rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+                <Link
+                  href={`/work/${project.id}`}
+                  className="group block p-8 h-full"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs text-off-white/40 uppercase tracking-wider">
+                      {project.category}
+                    </span>
+                    <span className="text-xs text-off-white/30">
+                      {project.year}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-off-white mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-off-white/50 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="mt-6 flex items-center text-sm text-off-white/40 group-hover:text-off-white/70 transition-colors">
+                    <span>View details</span>
+                    <svg
+                      className="w-4 h-4 ml-1 transform translate-x-0 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </div>
+                </Link>
+              </TiltCard>
             </motion.div>
           ))}
         </motion.div>

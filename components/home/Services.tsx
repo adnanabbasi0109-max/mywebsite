@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { siteData } from "@/data/site";
 import { staggerContainer, fadeUp } from "@/lib/motion";
 import ScrollReveal from "@/components/ScrollReveal";
+import TiltCard from "@/components/TiltCard";
 
 const icons: Record<string, React.ReactNode> = {
   design: (
@@ -49,23 +50,9 @@ export default function Services() {
           className="grid md:grid-cols-2 gap-6"
         >
           {siteData.services.map((service) => (
-            <motion.div
-              key={service.title}
-              variants={fadeUp}
-              className="group relative bg-[#111] border border-white/[0.06] rounded-2xl p-8 transition-all duration-300 hover:border-white/[0.12] overflow-hidden"
-            >
-              {/* Hover glow */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{
-                  background:
-                    "radial-gradient(ellipse at 20% 20%, rgba(100,180,200,0.04) 0%, transparent 60%)",
-                }}
-                aria-hidden="true"
-              />
-
-              <div className="relative z-10">
-                <div className="w-12 h-12 rounded-xl bg-white/[0.05] border border-white/[0.08] flex items-center justify-center text-off-white/50 mb-6 group-hover:text-off-white/80 group-hover:border-white/[0.15] transition-all duration-300">
+            <motion.div key={service.title} variants={fadeUp}>
+              <TiltCard className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 transition-all duration-300 hover:border-white/[0.12]">
+                <div className="w-12 h-12 rounded-xl bg-white/[0.05] border border-white/[0.08] flex items-center justify-center text-off-white/50 mb-6 hover:text-off-white/80 hover:border-white/[0.15] transition-all duration-300">
                   {icons[service.icon]}
                 </div>
                 <h3 className="text-lg font-semibold text-off-white mb-3">
@@ -74,7 +61,7 @@ export default function Services() {
                 <p className="text-sm text-off-white/45 leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </TiltCard>
             </motion.div>
           ))}
         </motion.div>

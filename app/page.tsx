@@ -8,7 +8,6 @@ import Services from "@/components/home/Services";
 import BentoGrid from "@/components/home/BentoGrid";
 import WorkTeaser from "@/components/home/WorkTeaser";
 import Approach from "@/components/home/Approach";
-import Availability from "@/components/home/Availability";
 import CompanyBlock from "@/components/home/CompanyBlock";
 import CTA from "@/components/home/CTA";
 
@@ -21,7 +20,6 @@ export default function HomePage() {
       <BentoGrid />
       <WorkTeaser />
       <Approach />
-      <Availability />
       <CompanyBlock />
       <CTA />
     </motion.div>
