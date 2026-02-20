@@ -31,9 +31,9 @@ export default function Footer() {
                 <Image
                   src="/logo.png"
                   alt="Musa"
-                  width={160}
-                  height={64}
-                  className="h-10 w-auto"
+                  width={320}
+                  height={128}
+                  className="h-28 w-auto"
                 />
               </Link>
               <p className="mt-4 text-sm text-off-white/40 leading-relaxed max-w-sm">
