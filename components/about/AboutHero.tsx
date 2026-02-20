@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { siteData } from "@/data/site";
 import { staggerContainer, fadeUp } from "@/lib/motion";
@@ -37,9 +38,15 @@ export default function AboutHero() {
             <span className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-6 block relative z-10">
               Read about us
             </span>
-            <h1 className="text-display-lg font-semibold gradient-text mb-6 relative z-10">
-              {siteData.profile.name}
-            </h1>
+            <div className="mb-6 relative z-10">
+              <Image
+                src="/logo.png"
+                alt={siteData.profile.name}
+                width={640}
+                height={256}
+                className="h-28 w-auto"
+              />
+            </div>
             <p className="text-lg text-off-white/50 leading-relaxed relative z-10">
               {siteData.profile.tagline}
             </p>

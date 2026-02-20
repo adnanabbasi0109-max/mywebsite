@@ -35,7 +35,7 @@ export default function Services() {
       <div className="mx-auto max-w-6xl px-6">
         <ScrollReveal>
           <span className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-4 block">
-            What I Do
+            What We Do
           </span>
           <h2 className="text-display-md font-semibold gradient-text mb-16">
             Services &amp; Expertise
