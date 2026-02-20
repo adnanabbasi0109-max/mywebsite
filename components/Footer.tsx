@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { siteData } from "@/data/site";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -26,11 +27,14 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-5">
             <ScrollReveal>
-              <Link
-                href="/"
-                className="text-2xl font-semibold text-off-white tracking-tight"
-              >
-                {siteData.profile.name}
+              <Link href="/" className="block">
+                <Image
+                  src="/logo.png"
+                  alt="Musa"
+                  width={160}
+                  height={64}
+                  className="h-10 w-auto"
+                />
               </Link>
               <p className="mt-4 text-sm text-off-white/40 leading-relaxed max-w-sm">
                 {siteData.profile.tagline}
