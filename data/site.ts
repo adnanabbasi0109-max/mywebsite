@@ -74,7 +74,7 @@ export interface SiteData {
 
 export const siteData: SiteData = {
   profile: {
-    name: "Musa",
+    name: "Yacum",
     title: "Product Designer & Developer",
     tagline: "We design and build things for the web.",
     shortBio:
@@ -86,7 +86,6 @@ export const siteData: SiteData = {
     paragraphs: [
       "Our work spans product design, frontend engineering, and strategy \u2014 often all three at once. We believe great software should feel obvious the moment you touch it.",
       "We\u2019ve built platforms from zero to scale, led cross-functional teams, and consulted on products across fintech, logistics, education, and consumer apps.",
-      "When we\u2019re not designing or building, we\u2019re usually exploring Islamic scholarship, cosmology, or the philosophy of technology.",
     ],
     highlights: [
       "Full-Stack Development",

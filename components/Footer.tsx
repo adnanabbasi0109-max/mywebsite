@@ -30,7 +30,7 @@ export default function Footer() {
               <Link href="/" className="block">
                 <Image
                   src="/logo.png"
-                  alt="Musa"
+                  alt="Yacum"
                   width={640}
                   height={256}
                   className="h-44 w-auto"

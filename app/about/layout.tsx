@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Musa — a designer-developer hybrid working at the intersection of design and engineering.",
+    "Learn about Yacum — a designer-developer hybrid working at the intersection of design and engineering.",
   openGraph: {
-    title: "About — Musa",
+    title: "About — Yacum",
     description:
-      "Learn about Musa — a designer-developer hybrid working at the intersection of design and engineering.",
+      "Learn about Yacum — a designer-developer hybrid working at the intersection of design and engineering.",
   },
 };
 

@@ -92,7 +92,7 @@ export default function Nav() {
         <Link href="/" className="block">
           <Image
             src="/logo.png"
-            alt="Musa"
+            alt="Yacum"
             width={320}
             height={128}
             className="h-28 w-auto"
