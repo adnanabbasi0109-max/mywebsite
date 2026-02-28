@@ -15,7 +15,7 @@ const stack = [
   },
   {
     label: "Frontend",
-    tools: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    tools: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion", "Three.js"],
     color: "rgba(100,180,255,0.08)",
     border: "rgba(100,180,255,0.15)",
   },

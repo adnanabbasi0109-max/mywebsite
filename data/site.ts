@@ -147,6 +147,7 @@ export const siteData: SiteData = {
     { name: "TypeScript", category: "Frontend" },
     { name: "Tailwind CSS", category: "Frontend" },
     { name: "Framer Motion", category: "Frontend" },
+    { name: "Three.js", category: "Frontend" },
     { name: "React Native", category: "Mobile" },
     { name: "Node.js", category: "Backend" },
     { name: "MongoDB", category: "Backend" },
