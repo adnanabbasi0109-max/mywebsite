@@ -7,6 +7,7 @@ import Marquee from "@/components/home/Marquee";
 import Services from "@/components/home/Services";
 import BentoGrid from "@/components/home/BentoGrid";
 import WorkTeaser from "@/components/home/WorkTeaser";
+import Testimonials from "@/components/home/Testimonials";
 import Approach from "@/components/home/Approach";
 import CTA from "@/components/home/CTA";
 
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Services />
       <BentoGrid />
       <WorkTeaser />
+      <Testimonials />
       <Approach />
       <CTA />
     </motion.div>

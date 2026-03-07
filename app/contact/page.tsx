@@ -6,6 +6,7 @@ import { siteData } from "@/data/site";
 import { pageTransition, staggerContainer, fadeUp } from "@/lib/motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import TiltCard from "@/components/TiltCard";
+import ContactForm from "@/components/contact/ContactForm";
 
 const projectTypes = [
   "a website",
@@ -156,7 +157,7 @@ export default function ContactPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="grid md:grid-cols-2 gap-6"
+            className="max-w-2xl mx-auto"
           >
             {/* Email card */}
             <motion.div variants={fadeUp}>
@@ -204,69 +205,12 @@ export default function ContactPage() {
                 </a>
               </TiltCard>
             </motion.div>
-
-            {/* Socials card */}
-            <motion.div variants={fadeUp}>
-              <TiltCard className="bg-[#111] border border-white/[0.06] rounded-2xl p-10">
-                <div className="w-12 h-12 rounded-xl bg-white/[0.05] border border-white/[0.08] flex items-center justify-center text-off-white/50 mb-6 hover:text-off-white/80 hover:border-white/[0.15] transition-all duration-300">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-                    />
-                  </svg>
-                </div>
-                <h2 className="text-lg font-semibold text-off-white mb-2">
-                  Find Us Online
-                </h2>
-                <p className="text-sm text-off-white/40 mb-6 leading-relaxed">
-                  Follow our work, connect, or just see what we&apos;re up to.
-                </p>
-                {siteData.contact.socials.length > 0 ? (
-                  <ul className="space-y-3">
-                    {siteData.contact.socials.map((social) => (
-                      <li key={social.label}>
-                        <a
-                          href={social.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-off-white/50 hover:text-off-white transition-colors group/link text-sm"
-                        >
-                          {social.label}
-                          <svg
-                            className="w-3.5 h-3.5 transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M7 17L17 7M17 7H7M17 7v10"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <span className="text-sm text-off-white/40">
-                    Coming soon
-                  </span>
-                )}
-              </TiltCard>
-            </motion.div>
           </motion.div>
         </div>
       </section>
+
+      {/* Contact form */}
+      <ContactForm />
 
       {/* Interactive card */}
       <section className="pb-20 md:pb-28">

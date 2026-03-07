@@ -24,13 +24,22 @@ export const metadata: Metadata = {
     template: "%s — Yacum",
   },
   description:
-    "First in Innovation. Product design, frontend engineering, and strategy.",
+    "A design-led development studio turning ideas into clean, thoughtful digital products that just work.",
   metadataBase: new URL("https://yacum.in"),
   openGraph: {
     title: "Yacum — First in Innovation",
     description:
-      "First in Innovation.",
+      "A design-led development studio turning ideas into clean, thoughtful digital products that just work.",
+    url: "https://yacum.in",
+    siteName: "Yacum",
     type: "website",
+    images: [{ url: "/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yacum — First in Innovation",
+    description:
+      "A design-led development studio turning ideas into clean, thoughtful digital products.",
   },
 };
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { pageTransition } from "@/lib/motion";
 import AboutHero from "@/components/about/AboutHero";
 import AboutContent from "@/components/about/AboutContent";
+import Founder from "@/components/about/Founder";
 import Philosophy from "@/components/about/Philosophy";
 import Timeline from "@/components/about/Timeline";
 import Tools from "@/components/about/Tools";
@@ -14,6 +15,7 @@ export default function AboutPage() {
     <motion.div {...pageTransition}>
       <AboutHero />
       <AboutContent />
+      <Founder />
       <Philosophy />
       <Timeline />
       <Tools />

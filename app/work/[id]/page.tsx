@@ -136,6 +136,125 @@ export default function ProjectPage() {
         </div>
       </section>
 
+      {/* Hero image placeholder */}
+      <section className="pb-16 md:pb-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <ScrollReveal>
+            <div
+              className="w-full bg-neutral-800 rounded-2xl border border-white/[0.06]"
+              style={{ aspectRatio: "16 / 9" }}
+              aria-label="Project hero image"
+            />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* The Brief */}
+      {project.brief && (
+        <section className="pb-16 md:pb-20">
+          <div className="mx-auto max-w-3xl px-6">
+            <ScrollReveal>
+              <h2 className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-4">
+                The Brief
+              </h2>
+              <p className="text-xl text-off-white/60 leading-relaxed">
+                {project.brief}
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
+      {/* Our Approach */}
+      {project.approach && (
+        <section className="pb-16 md:pb-20">
+          <div className="mx-auto max-w-3xl px-6">
+            <ScrollReveal>
+              <h2 className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-8">
+                Our Approach
+              </h2>
+            </ScrollReveal>
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-60px" }}
+              className="space-y-8"
+            >
+              {project.approach.map((step, i) => (
+                <motion.div key={i} variants={fadeUp} className="flex gap-5">
+                  <span className="text-3xl font-bold text-white/[0.06] flex-shrink-0 leading-none mt-1">
+                    0{i + 1}
+                  </span>
+                  <div>
+                    <h3 className="text-base font-semibold text-off-white mb-1">
+                      {step.step}
+                    </h3>
+                    <p className="text-sm text-off-white/50 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+      )}
+
+      {/* Detail image placeholder */}
+      <section className="pb-16 md:pb-20">
+        <div className="mx-auto max-w-4xl px-6">
+          <ScrollReveal>
+            <div
+              className="w-full bg-neutral-800 rounded-2xl border border-white/[0.06]"
+              style={{ aspectRatio: "4 / 3" }}
+              aria-label="Project detail image"
+            />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* The Outcome */}
+      {project.outcome && (
+        <section className="pb-16 md:pb-20">
+          <div className="mx-auto max-w-3xl px-6">
+            <ScrollReveal>
+              <h2 className="text-xs uppercase tracking-[0.2em] text-off-white/40 mb-4">
+                The Outcome
+              </h2>
+              <p className="text-xl text-off-white/60 leading-relaxed mb-8">
+                {project.outcome}
+              </p>
+            </ScrollReveal>
+            {project.link && (
+              <ScrollReveal delay={0.1}>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-3.5 border border-white/20 rounded-full text-off-white text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:border-white/30"
+                >
+                  Visit live site
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M7 17L17 7M17 7H7M17 7v10"
+                    />
+                  </svg>
+                </a>
+              </ScrollReveal>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Long description */}
       <section className="pb-20 md:pb-28">
         <div className="mx-auto max-w-3xl px-6">
@@ -159,32 +278,6 @@ export default function ProjectPage() {
               </motion.p>
             ))}
           </motion.div>
-
-          {project.link && (
-            <ScrollReveal>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-4 px-8 py-3.5 border border-white/20 rounded-full text-off-white text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:border-white/30"
-              >
-                Visit project
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 17L17 7M17 7H7M17 7v10"
-                  />
-                </svg>
-              </a>
-            </ScrollReveal>
-          )}
         </div>
       </section>
 

@@ -40,6 +40,7 @@ export default function CTA() {
             {siteData.cta.email}
           </a>
         </ScrollReveal>
+
       </div>
     </section>
   );

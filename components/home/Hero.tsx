@@ -15,6 +15,7 @@ function AnimatedHeadline({ text }: { text: string }) {
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
+      aria-label={text}
     >
       {words.map((word, i) => (
         <motion.span

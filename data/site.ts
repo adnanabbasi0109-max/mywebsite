@@ -4,6 +4,9 @@ export interface Project {
   category: string;
   description: string;
   longDescription: string[];
+  brief?: string;
+  approach?: { step: string; description: string }[];
+  outcome?: string;
   role: string;
   tags: string[];
   year: string;
@@ -213,6 +216,27 @@ export const siteData: SiteData = {
         "The design leans into whitespace, thoughtful typography, and subtle interactions that feel polished without being distracting. It\u2019s meant to feel calm and trustworthy, which is exactly what a company like T3 needs.",
         "Built with Next.js for performance and SEO, styled with Tailwind CSS, and deployed on Vercel. The site loads fast, looks sharp on every device, and communicates T3\u2019s mission the moment you land on it.",
       ],
+      brief:
+        "T3 needed a digital home that communicated their mission of humane technology — clean, trustworthy, and free of visual clutter.",
+      approach: [
+        {
+          step: "Research & Discovery",
+          description:
+            "We studied T3's mission, audience, and competitors to define a visual direction rooted in clarity and calm.",
+        },
+        {
+          step: "Design & Prototype",
+          description:
+            "Created high-fidelity designs emphasising whitespace, thoughtful typography, and subtle interactions that feel polished without distraction.",
+        },
+        {
+          step: "Build & Deploy",
+          description:
+            "Developed with Next.js and Tailwind CSS for performance and SEO, deployed on Vercel with sub-second load times.",
+        },
+      ],
+      outcome:
+        "A fast, accessible website that communicates T3's philosophy the moment you land on it — resulting in stronger brand perception and increased enquiries.",
       role: "Designer & Developer",
       tags: ["Next.js", "Tailwind CSS", "Web Design", "Vercel"],
       year: "2025",
@@ -231,6 +255,27 @@ export const siteData: SiteData = {
         "We focused on strong typography, a clean structure, and a color palette that feels serious without being cold. Every page is designed to guide potential clients toward getting in touch.",
         "Built with Next.js and Tailwind CSS for a fast, responsive experience. The site works beautifully on every screen size and loads in under a second.",
       ],
+      brief:
+        "Magnaperitus needed a digital presence as sharp and professional as their legal practice — credible, easy to navigate, and fast.",
+      approach: [
+        {
+          step: "Audit & Strategy",
+          description:
+            "Evaluated the existing online presence and defined a structure optimised for trust, clarity, and lead generation.",
+        },
+        {
+          step: "Visual Design",
+          description:
+            "Focused on strong typography, a serious yet approachable palette, and a layout that guides visitors toward getting in touch.",
+        },
+        {
+          step: "Development & Launch",
+          description:
+            "Built with Next.js and Tailwind CSS for a responsive, lightning-fast experience that loads in under a second on any device.",
+        },
+      ],
+      outcome:
+        "A polished, professional website that instils confidence in prospective clients and clearly communicates Magnaperitus's expertise.",
       role: "Designer & Developer",
       tags: ["Next.js", "Tailwind CSS", "Web Design", "Vercel"],
       year: "2025",
